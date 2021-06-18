@@ -1,0 +1,62 @@
+/run/verbose 2
+/run/initialize /control/execute vis.ma/tracking/storeTrajectory 2
+/run/setCut 0.01
+/run/physicsModified 
+r/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/set/viewpointVector 0 0 1
+/vis/viewer/set/lightsVector -1 0 0
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/notifyHandlers scene-0
+/vis/scene/add/hits
+/vis/scene/notifyHandlers
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add gamma
+/vis/scene/notifyHandlers scene-0
+/vis/filtering/trajectories/particleFilter-0/add e+
+/vis/scene/notifyHandlers scene-0
+/vis/filtering/trajectories/particleFilter-0/add e-
+/vis/scene/notifyHandlers scene-0
+/vis/filtering/trajectories/particleFilter-0/invert true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/create/drawByParticleID
+/vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByParticleID-0/set alpha white
+/vis/scene/notifyHandlers scene-0
+/vis/scene/endOfEventAction accumulate
+/vis/scene/add/axes
+/vis/scene/notifyHandlers
+/vis/scene/add/eventID
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility World 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour Shape 0 1 0 0 0.1
+/vis/scene/notifyHandlers
+/vis/geometry/set/colour Target 0 0 1 0
+/vis/scene/notifyHandlers
+/vis/viewer/set/style surface
+/vis/viewer/set/viewpointThetaPhi 120 150
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+/vis/multithreading/maxEventQueueSize 0
+/vis/drawOnlyToBeKeptEvents
+/vis/scene/endOfEventAction accumulate 0
+/run/setCut 0.01
+/run/beamOn 10000

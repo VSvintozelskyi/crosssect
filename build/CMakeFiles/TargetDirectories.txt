@@ -1,0 +1,7 @@
+/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/install/strip.dir
+/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/install/local.dir
+/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/install.dir
+/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/list_install_components.dir
+/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/rebuild_cache.dir
+/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/edit_cache.dir
+/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/main.dir
