@@ -28,8 +28,11 @@
 /// \brief Implementation of the B1ActionInitialization class
 
 #include "B1ActionInitialization.hh"
+#include "B1SteppingAction.hh"
 #include "B1PrimaryGeneratorAction.hh"
 #include "EDEventAction.hh"
+#include "B1RunAction.hh"
+#include "B1TrackingAction.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -52,7 +55,10 @@ void B1ActionInitialization::BuildForMaster() const
 void B1ActionInitialization::Build() const
 {
   SetUserAction(new B1PrimaryGeneratorAction);
-  SetUserAction(new EDEventAction);
+  // SetUserAction(new EDEventAction);
+  // /SetUserAction(new B1SteppingAction);
+  SetUserAction(new B1RunAction);
+  SetUserAction(new B1TrackingAction);
 }  
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -44,8 +44,6 @@ target_link_libraries(main ${Geant4_LIBRARIES})
 # relies on these scripts being in the current working directory.
 #
 set(SCRIPTS
-  main.in
-  main.out
   init_vis.mac
   run1.mac
   run2.mac
@@ -69,4 +67,4 @@ endforeach()
 #----------------------------------------------------------------------------
 # Install the executable to 'bin' directory under CMAKE_INSTALL_PREFIX
 #
-install(TARGETS main DESTINATION bin)
+# install(TARGETS main DESTINATION bin)

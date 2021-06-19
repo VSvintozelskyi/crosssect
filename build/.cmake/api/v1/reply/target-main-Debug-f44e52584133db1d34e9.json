@@ -1,0 +1,669 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "main"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries",
+			"add_definitions",
+			"include",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt",
+			"/home/vsvintozelskyi/programs/geant/install/lib/Geant4-10.7.0/UseGeant4.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 38,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 39,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 40,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -pthread -ftls-model=initial-exec -std=c++11  -g -g"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-pthread"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "G4INTY_USE_QT"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "G4INTY_USE_XT"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "G4LIB_BUILD_DLL"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "G4UI_USE_QT"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "G4UI_USE_TCSH"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "G4VIS_USE_OPENGL"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "G4VIS_USE_OPENGLQT"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "G4VIS_USE_OPENGLX"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "G4VIS_USE_QT3D"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "G4VIS_USE_RAYTRACERX"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_3DCORE_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_3DEXTRAS_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_3DINPUT_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_3DLOGIC_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_3DRENDER_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_NETWORK_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_OPENGL_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_PRINTSUPPORT_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/vsvintozelskyi/Documents/geant/crosssect/src/include"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/home/vsvintozelskyi/programs/geant/install/include/Geant4"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/home/vsvintozelskyi/programs/geant/install/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtCore"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/lib/qt/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtGui"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtWidgets"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtOpenGL"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtPrintSupport"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/Qt3DCore"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/QtNetwork"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/Qt3DExtras"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/Qt3DRender"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/Qt3DInput"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt/Qt3DLogic"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"id" : "main::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-W -Wall -pedantic -Wno-non-virtual-dtor -Wno-long-long -Wwrite-strings -Wpointer-arith -Woverloaded-virtual -Wno-variadic-macros -Wshadow -pipe -pthread -ftls-model=initial-exec -std=c++11  -g -g",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/vsvintozelskyi/programs/geant/install/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4Tree.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4FR.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4GMocren.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4visHepRep.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4RayTracer.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4VRML.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4OpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4gl2ps.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4visQt3D.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4vis_management.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4modeling.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4interfaces.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4persistency.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4error_propagation.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4readout.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4physicslists.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4tasking.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4parmodels.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libXmu.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libXext.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libXt.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libICE.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libSM.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libX11.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libGL.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5OpenGL.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5PrintSupport.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5Widgets.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt53DExtras.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt53DInput.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt53DLogic.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt53DRender.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt53DCore.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5Gui.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5Network.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libQt5Core.so.5.15.2",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4run.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4event.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4tracking.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4processes.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4analysis.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libexpat.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4digits_hits.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4track.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4particles.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4geometry.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4materials.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/libz.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4graphics_reps.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4intercoms.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4global.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4clhep.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/home/vsvintozelskyi/programs/geant/install/lib/libG4ptl.so.0.0.2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-pthread",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "main",
+	"nameOnDisk" : "main",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "main.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1ActionInitialization.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1DetectorConstruction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1PrimaryGeneratorAction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1RunAction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1SteppingAction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/B1TrackingAction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/EDEventAction.cc",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/Analysis.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1ActionInitialization.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1DetectorConstruction.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1PrimaryGeneratorAction.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1RunAction.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1SteppingAction.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/B1TrackingAction.hh",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "include/EDEventAction.hh",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "EXECUTABLE"
+}

@@ -1,8 +1,9 @@
 /run/verbose 2
-/run/initialize /control/execute vis.ma/tracking/storeTrajectory 2
-/run/setCut 0.01
-/run/physicsModified 
-r/create ! ! 600x600-0+0
+/run/initialize
+/control/execute vis.mac
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
 /vis/viewer/refresh
 /vis/viewer/set/autoRefresh false
 /vis/verbose errors
@@ -26,8 +27,6 @@ r/create ! ! 600x600-0+0
 /vis/scene/add/hits
 /vis/scene/notifyHandlers
 /vis/filtering/trajectories/create/particleFilter
-/vis/filtering/trajectories/particleFilter-0/add gamma
-/vis/scene/notifyHandlers scene-0
 /vis/filtering/trajectories/particleFilter-0/add e+
 /vis/scene/notifyHandlers scene-0
 /vis/filtering/trajectories/particleFilter-0/add e-
@@ -37,7 +36,7 @@ r/create ! ! 600x600-0+0
 /vis/modeling/trajectories/create/drawByParticleID
 /vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
 /vis/scene/notifyHandlers scene-0
-/vis/modeling/trajectories/drawByParticleID-0/set alpha white
+/vis/modeling/trajectories/drawByParticleID-0/set alpha red
 /vis/scene/notifyHandlers scene-0
 /vis/scene/endOfEventAction accumulate
 /vis/scene/add/axes
@@ -55,8 +54,4 @@ r/create ! ! 600x600-0+0
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/vis/multithreading/maxEventQueueSize 0
-/vis/drawOnlyToBeKeptEvents
 /vis/scene/endOfEventAction accumulate 0
-/run/setCut 0.01
-/run/beamOn 10000

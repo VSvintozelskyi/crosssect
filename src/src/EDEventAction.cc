@@ -33,6 +33,7 @@
 #include "G4Event.hh"
 #include "G4EventManager.hh"
 #include "G4ios.hh"
+#include "Analysis.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -56,9 +57,10 @@ void EDEventAction::BeginOfEventAction(const G4Event* event)
 
 void EDEventAction::EndOfEventAction(const G4Event* event)
 {
-  if (event->GetEventID() < 10000) {
-    G4EventManager::GetEventManager()->KeepTheCurrentEvent();
-  }
+  G4AnalysisManager* analysisManager = G4AnalysisManager::Instance();
+  analysisManager->FillH1(0, 1);
+  analysisManager->FillH1(1, 2);
+  analysisManager->FillH1(2, 3);
 }    
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

@@ -65,51 +65,6 @@ CMAKE_BINARY_DIR = /home/vsvintozelskyi/Documents/geant/crosssect/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -270,6 +225,78 @@ src/B1PrimaryGeneratorAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1PrimaryGeneratorAction.cc.s
 .PHONY : src/B1PrimaryGeneratorAction.cc.s
 
+src/B1RunAction.o: src/B1RunAction.cc.o
+.PHONY : src/B1RunAction.o
+
+# target to build an object file
+src/B1RunAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1RunAction.cc.o
+.PHONY : src/B1RunAction.cc.o
+
+src/B1RunAction.i: src/B1RunAction.cc.i
+.PHONY : src/B1RunAction.i
+
+# target to preprocess a source file
+src/B1RunAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1RunAction.cc.i
+.PHONY : src/B1RunAction.cc.i
+
+src/B1RunAction.s: src/B1RunAction.cc.s
+.PHONY : src/B1RunAction.s
+
+# target to generate assembly for a file
+src/B1RunAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1RunAction.cc.s
+.PHONY : src/B1RunAction.cc.s
+
+src/B1SteppingAction.o: src/B1SteppingAction.cc.o
+.PHONY : src/B1SteppingAction.o
+
+# target to build an object file
+src/B1SteppingAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1SteppingAction.cc.o
+.PHONY : src/B1SteppingAction.cc.o
+
+src/B1SteppingAction.i: src/B1SteppingAction.cc.i
+.PHONY : src/B1SteppingAction.i
+
+# target to preprocess a source file
+src/B1SteppingAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1SteppingAction.cc.i
+.PHONY : src/B1SteppingAction.cc.i
+
+src/B1SteppingAction.s: src/B1SteppingAction.cc.s
+.PHONY : src/B1SteppingAction.s
+
+# target to generate assembly for a file
+src/B1SteppingAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1SteppingAction.cc.s
+.PHONY : src/B1SteppingAction.cc.s
+
+src/B1TrackingAction.o: src/B1TrackingAction.cc.o
+.PHONY : src/B1TrackingAction.o
+
+# target to build an object file
+src/B1TrackingAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1TrackingAction.cc.o
+.PHONY : src/B1TrackingAction.cc.o
+
+src/B1TrackingAction.i: src/B1TrackingAction.cc.i
+.PHONY : src/B1TrackingAction.i
+
+# target to preprocess a source file
+src/B1TrackingAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1TrackingAction.cc.i
+.PHONY : src/B1TrackingAction.cc.i
+
+src/B1TrackingAction.s: src/B1TrackingAction.cc.s
+.PHONY : src/B1TrackingAction.s
+
+# target to generate assembly for a file
+src/B1TrackingAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/B1TrackingAction.cc.s
+.PHONY : src/B1TrackingAction.cc.s
+
 src/EDEventAction.o: src/EDEventAction.cc.o
 .PHONY : src/EDEventAction.o
 
@@ -301,10 +328,6 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... main"
 	@echo "... main.o"
@@ -319,6 +342,15 @@ help:
 	@echo "... src/B1PrimaryGeneratorAction.o"
 	@echo "... src/B1PrimaryGeneratorAction.i"
 	@echo "... src/B1PrimaryGeneratorAction.s"
+	@echo "... src/B1RunAction.o"
+	@echo "... src/B1RunAction.i"
+	@echo "... src/B1RunAction.s"
+	@echo "... src/B1SteppingAction.o"
+	@echo "... src/B1SteppingAction.i"
+	@echo "... src/B1SteppingAction.s"
+	@echo "... src/B1TrackingAction.o"
+	@echo "... src/B1TrackingAction.i"
+	@echo "... src/B1TrackingAction.s"
 	@echo "... src/EDEventAction.o"
 	@echo "... src/EDEventAction.i"
 	@echo "... src/EDEventAction.s"

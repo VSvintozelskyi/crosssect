@@ -52,7 +52,7 @@
 #
 # To draw only gammas:
 /vis/filtering/trajectories/create/particleFilter
-/vis/filtering/trajectories/particleFilter-0/add gamma
+#/vis/filtering/trajectories/particleFilter-0/add gamma
 /vis/filtering/trajectories/particleFilter-0/add e+
 /vis/filtering/trajectories/particleFilter-0/add e-
 /vis/filtering/trajectories/particleFilter-0/invert true
@@ -63,7 +63,7 @@
 /vis/modeling/trajectories/drawByParticleID-0/default/setDrawStepPts true
 # To select or override default colours (note: e+ is blue by default):
 #/vis/modeling/trajectories/list
-/vis/modeling/trajectories/drawByParticleID-0/set alpha white
+/vis/modeling/trajectories/drawByParticleID-0/set alpha red
 #
 # To superimpose all of the events from a given run:
 /vis/scene/endOfEventAction accumulate
@@ -87,7 +87,5 @@
 # For file-based drivers, use this to create an empty detector view:
 #/vis/viewer/flush
 
-/vis/multithreading/maxEventQueueSize 0
-/vis/drawOnlyToBeKeptEvents
+#/vis/drawOnlyToBeKeptEvents
 /vis/scene/endOfEventAction accumulate 0
-/run/setCut 0.01

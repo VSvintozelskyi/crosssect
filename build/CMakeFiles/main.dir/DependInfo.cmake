@@ -12,6 +12,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/vsvintozelskyi/Documents/geant/crosssect/src/src/B1ActionInitialization.cc" "CMakeFiles/main.dir/src/B1ActionInitialization.cc.o" "gcc" "CMakeFiles/main.dir/src/B1ActionInitialization.cc.o.d"
   "/home/vsvintozelskyi/Documents/geant/crosssect/src/src/B1DetectorConstruction.cc" "CMakeFiles/main.dir/src/B1DetectorConstruction.cc.o" "gcc" "CMakeFiles/main.dir/src/B1DetectorConstruction.cc.o.d"
   "/home/vsvintozelskyi/Documents/geant/crosssect/src/src/B1PrimaryGeneratorAction.cc" "CMakeFiles/main.dir/src/B1PrimaryGeneratorAction.cc.o" "gcc" "CMakeFiles/main.dir/src/B1PrimaryGeneratorAction.cc.o.d"
+  "/home/vsvintozelskyi/Documents/geant/crosssect/src/src/B1RunAction.cc" "CMakeFiles/main.dir/src/B1RunAction.cc.o" "gcc" "CMakeFiles/main.dir/src/B1RunAction.cc.o.d"
+  "/home/vsvintozelskyi/Documents/geant/crosssect/src/src/B1SteppingAction.cc" "CMakeFiles/main.dir/src/B1SteppingAction.cc.o" "gcc" "CMakeFiles/main.dir/src/B1SteppingAction.cc.o.d"
+  "/home/vsvintozelskyi/Documents/geant/crosssect/src/src/B1TrackingAction.cc" "CMakeFiles/main.dir/src/B1TrackingAction.cc.o" "gcc" "CMakeFiles/main.dir/src/B1TrackingAction.cc.o.d"
   "/home/vsvintozelskyi/Documents/geant/crosssect/src/src/EDEventAction.cc" "CMakeFiles/main.dir/src/EDEventAction.cc.o" "gcc" "CMakeFiles/main.dir/src/EDEventAction.cc.o.d"
   )
 

@@ -39,6 +39,7 @@
 #include "G4UIExecutive.hh"
 
 #include "Randomize.hh"
+#include "G4SystemOfUnits.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
@@ -57,15 +58,16 @@ int main(int argc,char** argv)
   // Construct the default run manager
   //
   auto* runManager =
-    G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
+    G4RunManagerFactory::CreateRunManager(G4RunManagerType::SerialOnly);
 
   // Set mandatory initialization classes
   //
   // Detector construction
   runManager->SetUserInitialization(new B1DetectorConstruction());
-
+  
   // Physics list
   G4VModularPhysicsList* physicsList = new NuBeam;
+  physicsList->SetDefaultCutValue(1e-6*mm);
   physicsList->SetVerboseLevel(1);
   runManager->SetUserInitialization(physicsList);
     
