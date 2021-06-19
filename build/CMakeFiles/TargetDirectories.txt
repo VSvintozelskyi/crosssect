@@ -1,3 +1,0 @@
-/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/rebuild_cache.dir
-/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/edit_cache.dir
-/home/vsvintozelskyi/Documents/geant/crosssect/build/CMakeFiles/main.dir
